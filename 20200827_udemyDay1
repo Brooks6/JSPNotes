@@ -30,3 +30,18 @@
   2.add data to session object, method signature: session.setAttribute(String name, Object value)
                                                   e.g. List<String> items = new ArrayList<>();
                                                        session.setAttribute("myToDoList", items);
+  3.retrieve data from session object, method signature: Object session.getAttribute(String name)
+                                                         e.g. List<String> myStuff = (List<String>) 
+                                                              session.getAttribute("myToDoList");
+  4.other useful methods: 1)isNew(): return true if the session is new
+                          2)getId(): returns the session id
+                          3)invalidate(): invalidates this session and unbinds any object associated with it
+                          4)setMaxInactiveInterval(long mills): sets the idle time for a session to expire
+                                                                the value is supplied in milliseconds
+
+//personalize content with cookies
+  1.what is the purpose of cookies: 1)personalize a web site for a user
+                                    2)keep track of user preferences
+  2.what is a cookie: text data exchanged between web browser and server
+  3.cookies - contents: name/ value pair
+  4.cookie api - package: cookie class defined in package: javax.servlet.http
