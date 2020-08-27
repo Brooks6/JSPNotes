@@ -1,0 +1,24 @@
+//jsp tags overview
+  1.jsp custom tags/jsp standard tag library(jstl)
+  2.jsp standard tag library(jstl): oracle created a specification for standard tags
+  3.jsp custom tags tutorial - www.luv2code.com/tagtutorial
+    jstl tutorial - www.luv2code.com/jstltutorial
+    jstl web site - http://jstl.java.net
+    jstl javadoc - www.luv2code.com/jstl-javadoc
+    jstl specification pdf - www.luv2code.co/jstl-pdf
+    
+//jstl core tags
+  1.catch: catches any throwable to occurs in the boy
+  2.choose: conditional tag that can be used for exclusive operations, similar to switch statement
+  3.if: simple if/then conditional
+  4.import: retrieves a URL and exposes its contents on the page or a variable
+  5.forEach: iterates over a collection of values
+  6.forTokens: iterates over a collection of tokens
+  7.out: used in scriptlets to display output, similar to <%=...%>
+  8.otherwise: used with the <choose> tag to handle the else clause
+  9.param: adds a parameter to a url
+  10.redirect: redirects the browser to a new url
+  11.remove: removes a scoped variable
+  12.set: assigns an expression value to a variable
+  13.url: defines a url with query parameters
+  14.when: used with the <choose> tag, when a condition is true
