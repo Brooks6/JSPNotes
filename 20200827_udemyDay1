@@ -1,0 +1,32 @@
+//jsp and servlets overview
+  1.what are JSPs and servlets:1)java code that runs on the web server
+                               2)read user's actions ... normally from html Form
+                               3)performs the work
+                               4)returns an HTML page that is generated dynamically
+                               
+//jsp hello world
+  1.what is a jsp file: 1)an HTML page with some java code sprinkled in...
+                        2)include dynamic content from java code
+  2.where is jsp processed: 1)jsp is processed on the server
+                            2)results of java code included in html returned to browser
+                            
+//jsp built-in server objects
+  1.list of commonly used jsp objects: 1)request: contains http request headers and form data
+                                       2)provides http support for sending response
+                                       3)jspwriter for including content in html page
+                                       4)unique session for each user of the web application
+                                       5)shared data for all users of the web application
+                                 
+//html form overview
+  1.reading form data with jsp: 1)<%= request.getParameter(formFieldName)%>
+                                2)${param.formFieldName} !only used for displaying form data
+                                
+//jsp session object
+  1.jsp session is created once for user's browser session. unique for this user
+  2.commonly used when you need to keep track of the user's actions
+  
+//tracking user actions with sessions
+  1.brooks sessionID: XXX -> session(store in memory of tomcat)
+  2.add data to session object, method signature: session.setAttribute(String name, Object value)
+                                                  e.g. List<String> items = new ArrayList<>();
+                                                       session.setAttribute("myToDoList", items);
