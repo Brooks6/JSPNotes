@@ -1,6 +1,11 @@
 //jsp tags overview
   1.jsp custom tags/jsp standard tag library(jstl)
   2.jsp standard tag library(jstl): oracle created a specification for standard tags
+  3.jstl: 1)core
+          2)messages formatting I18n
+          3)function
+          4)xml
+          5)sql
   3.jsp custom tags tutorial - www.luv2code.com/tagtutorial
     jstl tutorial - www.luv2code.com/jstltutorial
     jstl web site - http://jstl.java.net
@@ -22,3 +27,45 @@
   12.set: assigns an expression value to a variable
   13.url: defines a url with query parameters
   14.when: used with the <choose> tag, when a condition is true
+  
+//jstl function tags
+  1.the fn:split() function splits a string into an array of substrings based on delimiter
+  2.the fn:join() function concatenates a string array into single string based on a delimiter
+  
+//multi-lingual/ internationalization
+  1.I18N: Internationalization ~ 18letters
+  2.formatting messages: 1)instead of hard-coding display text/messages in your application
+                         2)make use of labels / the placeholders
+  3.locale: locale = language code + country code
+    file name must follow specific format: <your project file name> _LANGUAGECODE_COUNTRYCODE.properties
+                                           e.g.mylabels_es_ES.properties
+                                     
+//hello world servlets
+  1.what are servlets: 1)java class that is processed on the server
+                       2)java class generates html that is returned to browser
+                       3)can read html form data use cookies and sessions etc...
+                       4)at a high-level, similar functionality to JSPs
+  2.doGet() method has 3 steps: 1)set the content type(response.setContent("text/html");)
+                                2)get the printwriter(PrintWriter out = response.getWriter();)
+                                3)generate html content(out.println("balabala");)
+                                
+//comparing jsp and servlets
+  1.jsps: 1)html file with .jsp extension
+          2)contains static html
+          3)jsp to generate html
+          4)has built-in jsp objects
+  2.servlets: 1)java class file
+              2)generate all html
+              3)more steps to access web objects
+  3.servlet does the business logic, jsp handles the presentation view
+  4.model-view-controller(MVC) design pattern
+  
+//difference between GET and POST
+  1.GET: 1)good for debugging
+         2)bookmark or email url
+         3)limitations on data length
+  2.POST: 1)can't bookmark or email url
+          2)no limitations on data length
+          3)can also send binary data
+          
+//
