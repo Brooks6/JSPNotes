@@ -1,0 +1,20 @@
+//mvc with servlets and jsp
+  1.benefits of mvc: 1)minimizes html code in servlet(no more out.println...)
+                     2)minimize java business logic in jsps(no more large scriptlets in jsp code)
+  2.servlet can call a jsp - request dispather: step 1) get request dispatcher
+                                                        e.g. RequestDispatcher dispatcher = 
+                                                             request.getRequestDispatcher("/view_students.jsp");
+                                                step 2) forward to the jsp
+                                                        e.g. dispatcher.forward(request, response);
+  3.sending data to jsp: step 1) add data
+                                 e.g. String[] students = {"a", "b", "c"};
+                                      request.setAttribute("student_list", students);
+                         step 2) get request dispatcher
+                                 e.g. RequestDispatcher dispatcher =
+                                 request.getRequestDispatcher("/view_students.jsp");
+                         step 3) forward to the jsp
+                                 dispatcher.forward(request, response);
+                                 
+//mvc application architecture
+  1.student db utility: responsible for interfacing with the database using jdbc code, this is a common design
+                        pattern: Data Accessor Object(DAO)
